@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 import time
 
+
 browser = webdriver.Chrome()
 try:
     browser.get("http://suninjuly.github.io/wait2.html")
@@ -21,4 +22,3 @@ finally:
     time.sleep(10)
     # закрываем браузер после всех манипуляций
     browser.quit()
-    # это тестовый комментарий
