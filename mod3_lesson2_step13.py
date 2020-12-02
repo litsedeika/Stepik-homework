@@ -24,7 +24,8 @@ class TestAbs(unittest.TestCase):
         welcome_text_elt = browser.find_element_by_tag_name("h1")
         # записываем в переменную welcome_text текст из элемента welcome_text_elt
         welcome_text = welcome_text_elt.text
-        self.assertEqual(welcome_text, "Congratulations! You have successfully registered!", "some_error_message")
+        assert "Congratulations! You have successfully registered!" == welcome_text
+        # self.assertEqual(welcome_text, "Congratulations! You have successfully registered!", "some_error_message")
 
     def test_link2(self):
         browser = webdriver.Chrome()
@@ -45,7 +46,8 @@ class TestAbs(unittest.TestCase):
         welcome_text_elt = browser.find_element_by_tag_name("h1")
         # записываем в переменную welcome_text текст из элемента welcome_text_elt
         welcome_text = welcome_text_elt.text
-        self.assertEqual(welcome_text, "Congratulations! You have successfully registered!", "some_error_message")
+        assert "Congratulations! You have successfully registered!" == welcome_text
+        # self.assertEqual(welcome_text, "Congratulations! You have successfully registered!", "some_error_message")
 
 
 if __name__ == "__main__":
